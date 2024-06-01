@@ -157,6 +157,11 @@
 
 
 /*** Header ***/
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+}
+
 .header-carousel .owl-carousel-text {
     position: absolute;
     width: 100%;
@@ -242,7 +247,7 @@
 }
 
 .page-header {
-    background: url(../img/header-page.jpg) top center no-repeat;
+    background: url(../image/header.jpg) top center no-repeat;
     background-size: cover;
     text-shadow: 0 0 30px rgba(0, 0, 0, .1);
 }
@@ -304,6 +309,19 @@
 
 
 /*** Team ***/
+
+.additional-content {
+    /* Custom styles for the additional content */
+    margin-top: 1rem; /* Adjust if needed */
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .team-item img {
     position: relative;
     top: 0;
@@ -376,6 +394,14 @@
 
 
 /*** Testimonial ***/
+
+.custom-img {
+    max-width: 155px; /* Adjust this value as needed */
+    height: auto;
+    display: block; /* Ensures proper centering */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
 .testimonial-carousel::before {
     position: absolute;
     content: "";
