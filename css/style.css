@@ -81,9 +81,9 @@
 /*** Navbar ***/
 
 .navbar-brand .navbar-logo {
-    width: 276px; /* Adjust to your desired width */
+    width: 200px; /* Adjust to your desired width */
     height: auto; /* Maintain aspect ratio */
-    margin-top: 53px; /* Adjust to move the image down */
+    margin-top: 45px; /* Adjust to move the image down */
 }
 
 .navbar .dropdown-toggle::after {
