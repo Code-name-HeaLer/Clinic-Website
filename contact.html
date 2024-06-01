@@ -159,29 +159,30 @@
                         <p class="d-inline-block border rounded-pill py-1 px-4">Contact Us</p>
                         <h1 class="mb-4">Have Any Query? Please Contact Us!</h1>
                         
-                        <form>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="3c911e9c-632d-4447-82d4-e1a8899ff4e9">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" name="name" placeholder="Your Name" class="form-control" id="name" required>
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email" name="email" placeholder="Your Email" class="form-control" id="email" required>
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" name="subject" placeholder="Subject" id="subject" required>
                                         <label for="subject">Subject</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                        <textarea class="form-control" placeholder="Leave a message here" name="message" id="message" style="height: 100px" required></textarea>
                                         <label for="message">Message</label>
                                     </div>
                                 </div>
@@ -190,6 +191,7 @@
                                 </div>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -269,6 +271,7 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

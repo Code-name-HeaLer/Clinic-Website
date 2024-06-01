@@ -425,51 +425,49 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="bg-light rounded h-100 d-flex align-items-center p-5">
-                        <form>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="3c911e9c-632d-4447-82d4-e1a8899ff4e9">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" name="name" placeholder="Your Name" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" class="form-control border-0" name="email" placeholder="Your Email" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" name="mobile" placeholder="Your Mobile" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Choose Your Problem</option>
-                                        <option value="1">Autism</option>
-                                        <option value="2">Cerebral Palsy</option>
-                                        <option value="3">ADHD</option>
-                                        <option value="4">Developmental Delay</option>
-                                        <option value="5">Down's syndrome</option>
-                                        <option value="6">Oromotor function</option>
-                                        <option value="7">Handwriting issues</option>
+                                    <select class="form-select border-0" name="problem" style="height: 55px;" required>
+                                        <option value="" selected disabled>Choose Your Problem</option>
+                                        <option value="Autism">Autism</option>
+                                        <option value="Cerebral Palsy">Cerebral Palsy</option>
+                                        <option value="ADHD">ADHD</option>
+                                        <option value="Developmental Delay">Developmental Delay</option>
+                                        <option value="Down's syndrome">Down's syndrome</option>
+                                        <option value="Oromotor function">Oromotor function</option>
+                                        <option value="Handwriting issues">Handwriting issues</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control border-0 datetimepicker-input"
-                                            placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                                        <input type="text" name="date" class="form-control border-0 datetimepicker-input" placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;" required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control border-0 datetimepicker-input"
-                                            placeholder="Choose Date" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                                        <input type="text" name="time" class="form-control border-0 datetimepicker-input" placeholder="Choose Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" rows="5" placeholder="Describe your problem"></textarea>
+                                    <textarea class="form-control border-0" name="description" rows="5" placeholder="Describe your problem" required></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Book Appointment</button>
                                 </div>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
             </div>
@@ -582,6 +580,7 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
